@@ -3,6 +3,7 @@ MAINTAINER Benjamin Tamasi <h@lfto.me>
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get dist-upgrade -y && apt-get install -y \
         curl \
+        wget \
         git \
         sqlite \
         mysql-server \
