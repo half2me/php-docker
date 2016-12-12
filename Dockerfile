@@ -15,7 +15,12 @@ RUN apt-get update && apt-get dist-upgrade -y && apt-get install -y \
         php-xdebug \
         php-pdo-sqlite \
         php-pdo-mysql \
-        php-xml
+        php-xml \
+        php-soap \
+        php-pear \
+        php-bz2 \
+        php-curl
+        
 RUN rm -rf /var/lib/apt/lists/*
 
 # Get composer
