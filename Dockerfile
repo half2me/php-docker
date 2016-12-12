@@ -6,5 +6,5 @@ RUN { \
         echo mysql-community-server mysql-community-server/root-pass password ''; \
         echo mysql-community-server mysql-community-server/re-root-pass password ''; \
         echo mysql-community-server mysql-community-server/remove-test-db select false; \
-    } | debconf-set-selections
-RUN apt-get install -y sqlite mysql-server php php-intl php-mbstring php-xdebug php-pdo-sqlite php-pdo-mysql
+    } | debconf-set-selections && apt-get install -y \
+sqlite mysql-server php php-intl php-mbstring php-xdebug php-pdo-sqlite php-pdo-mysql
