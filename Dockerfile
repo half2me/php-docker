@@ -14,7 +14,8 @@ RUN apt-get update && apt-get dist-upgrade -y && apt-get install -y \
         php-mbstring \
         php-xdebug \
         php-pdo-sqlite \
-        php-pdo-mysql
+        php-pdo-mysql \
+        php-xml
 RUN rm -rf /var/lib/apt/lists/*
 
 # Get composer
